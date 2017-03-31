@@ -55,6 +55,13 @@ bld.SAMBA3_BINARY('smbget',
                  popt_samba3
                  smbclient''')
 
+bld.SAMBA3_BINARY('smbput',
+                 source='smbput.c',
+                 deps='''
+                 talloc
+                 popt_samba3
+                 smbclient''')
+
 bld.SAMBA3_BINARY('nmblookup',
                  source='nmblookup.c',
                  deps='''
